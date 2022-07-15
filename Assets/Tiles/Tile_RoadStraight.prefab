@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4659964758418331328, guid: dec994e4b85034f14bcf0e5547269cfa, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7446412693203229078, guid: dec994e4b85034f14bcf0e5547269cfa, type: 3}
       propertyPath: m_Name
       value: Tile_RoadStraight
