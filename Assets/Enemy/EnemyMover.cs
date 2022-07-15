@@ -12,6 +12,11 @@ public class EnemyMover : MonoBehaviour
        StartCoroutine(FollowPath());
     }
 
+    void FindPath()
+    {
+        GameObject[] waypoints = GameObject.FindGameObjectsWithTag("Path");
+    }
+
     IEnumerator FollowPath()
     {
         foreach(Waypoint waypoint in path)
