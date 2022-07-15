@@ -7,6 +7,11 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] int  maxHitPoints = 5;
     [SerializeField] int currentHitPoints = 0;
 
+    Enemy enemy;
+
+    void Start() {
+        enemy = GetComponent<Enemy>();    
+    }
 
     void OnEnable()
     {
@@ -29,5 +34,6 @@ public class EnemyHealth : MonoBehaviour
 
     void KillEnemy(){
         gameObject.SetActive(false);
+        enemy.RewardGold();
     }
 }
