@@ -8,7 +8,7 @@ using TMPro;
 public class CoordinateLabeler : MonoBehaviour
 {
     [SerializeField] Color defaultColor = Color.white;
-    [SerializeField] Color blockedColor = Color.gray;
+    [SerializeField] Color blockedColor = Color.black;
 
 
     TextMeshPro label;
@@ -30,6 +30,7 @@ public class CoordinateLabeler : MonoBehaviour
         {
             DisplayCoordinates();
             UpdateObjectName();
+            label.enabled= true;
         }
 
         SetLabelColor();
